@@ -45,13 +45,25 @@ This project enhances defect detection using a combination of synthetic data gen
 ---
 
 ## 📊 Results (Sample: Cable Category)
+
 | Metric                | Value     |
 |-----------------------|-----------|
-| Accuracy              | 96.59%    |
-| Precision             | 1.00      |
-| Recall (Sensitivity)  | 0.93      |
-| F1 Score              | 0.97      |
-| ROC AUC               | 0.98      |
+| Accuracy              | 96.0%     |
+| Precision             | 0.95      |
+| Recall (Sensitivity)  | 0.96      |
+| F1 Score              | 0.95      |
+| ROC AUC               | 0.986     |
+
+## 📊 Results (Sample: Bottle Category)
+
+| Metric                | Value     |
+|-----------------------|-----------|
+| Accuracy              | 99.0%     |
+| Precision             | 0.98      |
+| Recall (Sensitivity)  | 0.99      |
+| F1 Score              | 0.98      |
+| ROC AUC               | 1.00      |
+
 
 ---
 
@@ -64,11 +76,12 @@ This project enhances defect detection using a combination of synthetic data gen
 
 
 ## 🖼️ Visual Outputs
-- `confusion_matrix.png`
-- `roc_curve.png`
-- `training_loss_vs_epoch.png`
-- `accuracy_vs_epoch.png`
-- `GradCAM` visual heatmaps
+- `confusion_matrix_bottle.png`
+- `confusion_matrix_cable.png`
+- `roc_curve_bottle.png`
+- `roc_curve_cable.png`
+- `classification_report.png`
+- `Grad-CAM_images_cable` visual heatmaps
 
 ---
 
@@ -77,6 +90,9 @@ This project enhances defect detection using a combination of synthetic data gen
 - [CycleGAN Paper](https://arxiv.org/abs/1703.10593)
 - [PyTorch ResNet18](https://pytorch.org/vision/stable/models.html)
 
+> **Note:**  
+> The pre-trained CycleGAN model and the dataset used in this project are **not included** in the repository due to memory and storage limitations.  
+> Please ensure you have access to the required dataset and model files before running the code.
 
 ---
 
